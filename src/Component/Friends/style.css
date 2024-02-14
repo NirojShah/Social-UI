@@ -1,0 +1,22 @@
+#msg{
+    color: purple;
+    transition-duration: 0.3s;
+}
+
+#msgBtn{
+    background-color: black;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+
+}
+
+#msgBtn:hover{
+    background-color: purple;
+}
+
+#msgBtn:hover #msg{
+    color: black;
+}
+#delBtn:hover #msg{
+    color: red;
+}
