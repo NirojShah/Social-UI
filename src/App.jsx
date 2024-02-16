@@ -20,6 +20,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="/prax" element={<Prax />} />
         <Route path="/login" element={<Login />} />
         <Route
@@ -37,8 +38,8 @@ function App() {
           <Route path="/home/chat/:id" element={<Delete />} />
         </Route>
         <Route path="/myrequests" element={<Requests />} />
-        <Route path="/profile" element={<Profile />} >
-          <Route path="/profile/edit" element={<Updateprofile/>}/>
+        <Route path="/profile" element={<Profile />}>
+          <Route path="/profile/edit" element={<Updateprofile />} />
         </Route>
       </Routes>
     </Router>
