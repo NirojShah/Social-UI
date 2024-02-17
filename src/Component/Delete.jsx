@@ -15,7 +15,7 @@ import {
 
 import io from "socket.io-client";
 import { Link, useLocation, useParams } from "react-router-dom";
-var socket = io("http://localhost:5000");
+var socket = io("https://social-back-ffwk.onrender.com");
 
 const Delete = () => {
   const token = localStorage.getItem("token");

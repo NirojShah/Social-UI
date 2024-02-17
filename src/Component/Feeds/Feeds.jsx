@@ -32,7 +32,6 @@ const Feeds = () => {
       });
 
       setFeeds(data.data.feeds);
-      console.log(data.data.feeds[0].img[0].path);
       setLoading(false);
     };
     fetchFeed();
