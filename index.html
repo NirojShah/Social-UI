@@ -9,6 +9,17 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+    async function loadModule(url) {
+      const response = await fetch(url);
+      const scriptText = await response.text();
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.text = scriptText;
+      document.body.appendChild(script);
+    }
+
+    loadModule('https://social-ui.onrender.com/src/main.jsx');
+  </script>
   </body>
 </html>
