@@ -32,7 +32,7 @@ const Message = () => {
         My Chats
       </Heading>
 
-      {loading ? (
+      {loading && chats[0]? (
         <HashLoader color="#cf00cf" />
       ) : (
         <Flex
@@ -60,7 +60,7 @@ const Message = () => {
                       : val.users[0].name}
                   </Text>
                   <Text pl="10px" color="white">
-                    {val.latestMessage.content}
+                    {val.latestMessage ? val.latestMessage.content:""}
                   </Text>
                 </Box>
                 <Spacer></Spacer>

@@ -76,12 +76,12 @@ const Feeds = () => {
                   size="sm"
                   bg="black"
                 >
-                  <CardBody >
-                    <Img
-                      src={`http://localhost:5000/${val.img[0].path}`} w="100%" 
+                  {/* <CardBody >
+                    {val.img[0].path?<Img
+                      src={`https://social-back-ffwk.onrender.com/${val.img[0].path}`} w="100%" 
 
-                    />
-                  </CardBody>
+                    />:""}
+                  </CardBody> */}
 
                   <CardHeader>
                     <Text
